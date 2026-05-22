@@ -8,12 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c9574f1-2f9f-4e16-9445-6c12b677cc25" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hospital_Cf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hospital_Cf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hospital_Cf/DTOs/GetAdmissionDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hospital_Cf/DTOs/GetAdmissionDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hospital_Cf/DTOs/GetBedAssignmentsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hospital_Cf/DTOs/GetBedAssignmentsDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hospital_Cf/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hospital_Cf/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="2c9574f1-2f9f-4e16-9445-6c12b677cc25" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1779346651294</updated>
       <workItem from="1779346652693" duration="3723000" />
-      <workItem from="1779473909502" duration="5007000" />
+      <workItem from="1779473909502" duration="5312000" />
     </task>
     <servers />
   </component>
