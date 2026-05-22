@@ -6,4 +6,5 @@ public class GetBedAssignmentsDto
     public DateTime From { get; set; }
     public DateTime? To { get; set; }
     public GetBedsDto Beds { get; set; }
+    public GetRoomsDto Rooms { get; set; }
 }
