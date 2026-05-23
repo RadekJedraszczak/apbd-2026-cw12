@@ -7,6 +7,6 @@ public class GetPatientsDto
     public string LastName { get; set; } = string.Empty;
     public int Age { get; set; }
     public bool Sex { get; set; }
-    public List<GetAdmissionDto> Admissions { get; set; } = [];
-    public List<GetBedAssignmentsDto> BedAssignments { get; set; } = [];
+    public ICollection<GetAdmissionDto> Admissions { get; set; } = [];
+    public ICollection<GetBedAssignmentsDto> BedAssignments { get; set; } = [];
 }

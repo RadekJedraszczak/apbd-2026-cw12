@@ -2,7 +2,7 @@
 
 public class GetRoomsDto
 {
-    public int Id { get; set; }
+    public string Id { get; set; } = string.Empty;
     public bool HasTv { get; set; }
     public GetWardsDto Wards { get; set; } = null!;
 }

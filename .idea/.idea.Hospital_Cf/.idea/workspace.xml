@@ -8,7 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c9574f1-2f9f-4e16-9445-6c12b677cc25" name="Changes" comment="" />
+    <list default="true" id="2c9574f1-2f9f-4e16-9445-6c12b677cc25" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hospital_Cf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hospital_Cf/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hospital_Cf/DTOs/GetPatientsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hospital_Cf/DTOs/GetPatientsDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hospital_Cf/DTOs/GetRoomsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hospital_Cf/DTOs/GetRoomsDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hospital_Cf/Services/DbService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hospital_Cf/Services/DbService.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,21 +22,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "RadekJedraszczak"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;RadekJedraszczak&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/RadekJedraszczak/apbd-2026-cw12.git",
-    "accountId": "b531ed7e-8e77-4b8e-92fb-8a00cdb24420"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/RadekJedraszczak/apbd-2026-cw12.git&quot;,
+    &quot;accountId&quot;: &quot;b531ed7e-8e77-4b8e-92fb-8a00cdb24420&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/Desktop/EndpointsAndDiagram 1/GET.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/EndpointsAndDiagram 1/POST..json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hospital_Cf/Controllers/PatientControler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hospital_Cf/DTOs/AddBedAssignmentDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hospital_Cf/DTOs/GetAdmissionDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hospital_Cf/DTOs/GetBedAssignmentsDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hospital_Cf/DTOs/GetBedsDto.cs" root0="FORCE_HIGHLIGHTING" />
@@ -41,6 +48,11 @@
     <setting file="file://$PROJECT_DIR$/Hospital_Cf/DTOs/GetWardsDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hospital_Cf/Exceptions/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Hospital_Cf/Services/DbService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hospital_Cf/Services/IDbService.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -58,6 +70,7 @@
   "keyToString": {
     ".NET Launch Settings Profile.Hospital_Cf: http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -116,8 +129,18 @@
       <option name="presentableId" value="Default" />
       <updated>1779346651294</updated>
       <workItem from="1779346652693" duration="3723000" />
-      <workItem from="1779473909502" duration="5312000" />
+      <workItem from="1779473909502" duration="6092000" />
+      <workItem from="1779536979430" duration="3893000" />
     </task>
+    <task id="LOCAL-00001" summary="save">
+      <option name="closed" value="true" />
+      <created>1779479411643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779479411643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +150,8 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="save" />
+    <option name="LAST_COMMIT_MESSAGE" value="save" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

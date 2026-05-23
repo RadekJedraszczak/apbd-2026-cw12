@@ -3,11 +3,12 @@ using Hospital_Cf.Data;
 using Hospital_Cf.DTOs;
 using Hospital_Cf.Exceptions;
 using Hospital_Cf.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hospital_Cf.Services;
 
-public class DbService
+public class DbService : IDbService
 {
     private readonly HospitalDfContext _context;
 
@@ -16,15 +17,24 @@ public class DbService
         _context = context;
     }
 
-    public async Task<List<GetPatientsDto>> GetAllPatients()
+    public async Task<IEnumerable<GetPatientsDto>> GetAllPatients(string? search)
     {
-        var res = await _context.Patients
+        var query = _context.Patients.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(search))
+        {
+            query = query.Where(p =>
+                EF.Functions.Like(p.FirstName, $"%{search}%") ||
+                EF.Functions.Like(p.LastName, $"%{search}%"));
+        }
+        
+        var res = await query
             .Select(p => new GetPatientsDto()
             {
                 Pesel = p.Pesel,
-                FirstName =  p.FirstName,
+                FirstName = p.FirstName,
                 LastName = p.LastName,
-                Age =  p.Age,
+                Age = p.Age,
                 Sex = p.Sex,
                 Admissions = p.Admissions.Select(a => new GetAdmissionDto()
                 {
@@ -53,15 +63,19 @@ public class DbService
                             Description = ba.Bed.BedType.Description
                         }
                     },
-                    Rooms =  new GetRoomsDto()
+                    Rooms = new GetRoomsDto()
                     {
-                        Id = ba.Bed.Id,
-                        HasTv = ba.Bed.Id,
-                        
+                        Id = ba.Bed.Room.Id,
+                        HasTv = ba.Bed.Room.HasTv,
+                        Wards = new GetWardsDto()
+                        {
+                            Id = ba.Bed.Room.Ward.Id,
+                            Name = ba.Bed.Room.Ward.Name,
+                            Description = ba.Bed.Room.Ward.Description
+                        }
                     }
                 }).ToList(),
-                
-            })
+            }).ToListAsync();
             
 
         if (res == null)
