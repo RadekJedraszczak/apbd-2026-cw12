@@ -1,10 +1,11 @@
 ﻿using Hospital_Cf.DTOs;
+using Hospital_Cf.Exceptions;
 using Hospital_Cf.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hospital_Cf.Controllers;
 
-[Microsoft.AspNetCore.Components.Route("api/[controller]")]
+[Route("api/[controller]")]
 [ApiController]
 public class PatientControler : ControllerBase
 {
@@ -18,7 +19,29 @@ public class PatientControler : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetPatients([FromQuery] string? search)
     {
-       var pat =  await _dbService.GetAllPatients(search);
-       return Ok(pat);
+        try
+        {
+            var pat = await _dbService.GetAllPatients(search);
+            return Ok(pat);
+        }
+        catch (NotFoundException e)
+        {
+            return NotFound(e.Message);
+        }
+    }
+
+    [Route("{pesel}/bedassignments")]
+    [HttpPost]
+    public async Task<IActionResult> AddBedAssignments([FromQuery] string? pesel, AddBedAssignmentDto dto)
+    {
+        try
+        {
+            await _dbService.AddBedAssignment(dto, pesel);
+            return Created();
+        }
+        catch (NotFoundException e)
+        {
+            return NotFound(e.Message);
+        }
     }
 }
